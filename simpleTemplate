@@ -171,9 +171,14 @@ export default {
       ]
     }
   },
+  computed:{
+    contentSize() {
+      return this.$store.state.contentSize
+    }
+  },
   watch: {
-    'table.perPage': function(val, old) {
-      this.getData()
+    contentSize(val) {
+      this.changeTableColumnConfig()
     }
   },
   methods: {
@@ -259,7 +264,6 @@ export default {
     }
   },
   mounted() {
-    window.onresize = this.changeTableColumnConfig
     this.changeTableColumnConfig()
     this.getData()
   }
