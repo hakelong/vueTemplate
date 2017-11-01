@@ -256,10 +256,11 @@ export default {
           this.isLoading = false
         })
         .catch(err => {
-          console.log(err)
           this.tableData1=[];
+          this.from = 0
+          this.to = 0
+          this.total = 0
           this.isLoading = false;
-          this.$Message.error('失败')
         })
     },
 
