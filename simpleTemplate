@@ -257,6 +257,8 @@ export default {
         })
         .catch(err => {
           console.log(err)
+          this.tableData1=[];
+          this.isLoading = false;
           this.$Message.error('失败')
         })
     },
