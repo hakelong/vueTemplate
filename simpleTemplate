@@ -123,7 +123,7 @@ h1 {
   </div>
 </template>
 <script>
-import util from '../../../libs/util'
+import util from '@/libs/util'
 
 export default {
   components: {},
