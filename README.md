@@ -14,5 +14,5 @@
         {title: '操作',
           key: 'options',
           _fixed: 'right',
-          _fix_width: true,
+          _fixWidth: true,
           _min_width: 330,}
